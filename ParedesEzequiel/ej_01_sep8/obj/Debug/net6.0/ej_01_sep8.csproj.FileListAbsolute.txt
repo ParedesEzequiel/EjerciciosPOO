@@ -1,0 +1,15 @@
+C:\Users\alumno\source\repos\ParedesEzequiel\ej_01_sep8\bin\Debug\net6.0\ej_01_sep8.exe
+C:\Users\alumno\source\repos\ParedesEzequiel\ej_01_sep8\bin\Debug\net6.0\ej_01_sep8.deps.json
+C:\Users\alumno\source\repos\ParedesEzequiel\ej_01_sep8\bin\Debug\net6.0\ej_01_sep8.runtimeconfig.json
+C:\Users\alumno\source\repos\ParedesEzequiel\ej_01_sep8\bin\Debug\net6.0\ej_01_sep8.dll
+C:\Users\alumno\source\repos\ParedesEzequiel\ej_01_sep8\bin\Debug\net6.0\ej_01_sep8.pdb
+C:\Users\alumno\source\repos\ParedesEzequiel\ej_01_sep8\obj\Debug\net6.0\ej_01_sep8.csproj.AssemblyReference.cache
+C:\Users\alumno\source\repos\ParedesEzequiel\ej_01_sep8\obj\Debug\net6.0\ej_01_sep8.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alumno\source\repos\ParedesEzequiel\ej_01_sep8\obj\Debug\net6.0\ej_01_sep8.AssemblyInfoInputs.cache
+C:\Users\alumno\source\repos\ParedesEzequiel\ej_01_sep8\obj\Debug\net6.0\ej_01_sep8.AssemblyInfo.cs
+C:\Users\alumno\source\repos\ParedesEzequiel\ej_01_sep8\obj\Debug\net6.0\ej_01_sep8.csproj.CoreCompileInputs.cache
+C:\Users\alumno\source\repos\ParedesEzequiel\ej_01_sep8\obj\Debug\net6.0\ej_01_sep8.dll
+C:\Users\alumno\source\repos\ParedesEzequiel\ej_01_sep8\obj\Debug\net6.0\refint\ej_01_sep8.dll
+C:\Users\alumno\source\repos\ParedesEzequiel\ej_01_sep8\obj\Debug\net6.0\ej_01_sep8.pdb
+C:\Users\alumno\source\repos\ParedesEzequiel\ej_01_sep8\obj\Debug\net6.0\ej_01_sep8.genruntimeconfig.cache
+C:\Users\alumno\source\repos\ParedesEzequiel\ej_01_sep8\obj\Debug\net6.0\ref\ej_01_sep8.dll
