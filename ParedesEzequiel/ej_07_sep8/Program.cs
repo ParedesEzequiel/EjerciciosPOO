@@ -70,7 +70,22 @@ namespace ej_07_sep8
     {
         static void Main(string[] args)
         {
-            Console.Write
+            Console.WriteLine("Escriba la primer raíz de la función: ");
+            string e = Console.ReadLine();
+
+            Console.WriteLine("Escriba la segunda raíz: ");
+            string f = Console.ReadLine();
+
+            Console.WriteLine("Escriba el término independiente: ");
+            string g = Console.ReadLine();
+            Console.WriteLine("");
+
+            Raices ecuacion = new Raices(int.Parse(e), int.Parse(f), int.Parse(g));
+
+            ecuacion.calcular();
+
+            Console.ReadKey();
         }
     }
 }
+
