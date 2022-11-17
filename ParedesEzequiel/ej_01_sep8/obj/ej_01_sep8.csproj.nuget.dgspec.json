@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Alumno\\EjerciciosPOO\\ParedesEzequiel\\ej_01_sep8\\ej_01_sep8.csproj": {}
+    "C:\\Users\\Alumno\\Desktop\\EjerciciosPOO\\ParedesEzequiel\\ej_01_sep8\\ej_01_sep8.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Alumno\\EjerciciosPOO\\ParedesEzequiel\\ej_01_sep8\\ej_01_sep8.csproj": {
+    "C:\\Users\\Alumno\\Desktop\\EjerciciosPOO\\ParedesEzequiel\\ej_01_sep8\\ej_01_sep8.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alumno\\EjerciciosPOO\\ParedesEzequiel\\ej_01_sep8\\ej_01_sep8.csproj",
+        "projectUniqueName": "C:\\Users\\Alumno\\Desktop\\EjerciciosPOO\\ParedesEzequiel\\ej_01_sep8\\ej_01_sep8.csproj",
         "projectName": "ej_01_sep8",
-        "projectPath": "C:\\Users\\Alumno\\EjerciciosPOO\\ParedesEzequiel\\ej_01_sep8\\ej_01_sep8.csproj",
+        "projectPath": "C:\\Users\\Alumno\\Desktop\\EjerciciosPOO\\ParedesEzequiel\\ej_01_sep8\\ej_01_sep8.csproj",
         "packagesPath": "C:\\Users\\Alumno\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alumno\\EjerciciosPOO\\ParedesEzequiel\\ej_01_sep8\\obj\\",
+        "outputPath": "C:\\Users\\Alumno\\Desktop\\EjerciciosPOO\\ParedesEzequiel\\ej_01_sep8\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Alumno\\AppData\\Roaming\\NuGet\\NuGet.Config",
