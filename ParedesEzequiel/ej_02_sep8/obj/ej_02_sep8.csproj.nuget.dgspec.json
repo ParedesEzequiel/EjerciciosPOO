@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\alumno\\source\\repos\\ParedesEzequiel\\ej_02_sep8\\ej_02_sep8.csproj": {}
+    "C:\\Users\\Alumno\\EjerciciosPOO\\ParedesEzequiel\\ej_02_sep8\\ej_02_sep8.csproj": {}
   },
   "projects": {
-    "C:\\Users\\alumno\\source\\repos\\ParedesEzequiel\\ej_02_sep8\\ej_02_sep8.csproj": {
+    "C:\\Users\\Alumno\\EjerciciosPOO\\ParedesEzequiel\\ej_02_sep8\\ej_02_sep8.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alumno\\source\\repos\\ParedesEzequiel\\ej_02_sep8\\ej_02_sep8.csproj",
+        "projectUniqueName": "C:\\Users\\Alumno\\EjerciciosPOO\\ParedesEzequiel\\ej_02_sep8\\ej_02_sep8.csproj",
         "projectName": "ej_02_sep8",
-        "projectPath": "C:\\Users\\alumno\\source\\repos\\ParedesEzequiel\\ej_02_sep8\\ej_02_sep8.csproj",
-        "packagesPath": "C:\\Users\\alumno\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alumno\\source\\repos\\ParedesEzequiel\\ej_02_sep8\\obj\\",
+        "projectPath": "C:\\Users\\Alumno\\EjerciciosPOO\\ParedesEzequiel\\ej_02_sep8\\ej_02_sep8.csproj",
+        "packagesPath": "C:\\Users\\Alumno\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Alumno\\EjerciciosPOO\\ParedesEzequiel\\ej_02_sep8\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\alumno\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Alumno\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -49,12 +49,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     }

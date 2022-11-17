@@ -1,4 +1,4 @@
-﻿namespace Ejercicio02
+﻿namespace ej_02_sep8
 {
     class Persona
     {
@@ -205,7 +205,7 @@
             Persona persona2 = new Persona(p, int.Parse(i), n);
 
 
-            Console.WriteLine(persona2.Nombre + " " + persona2.Edad + " " + persona2.Sexo + " " + persona2.Peso + " " + persona2.Altura);
+            Console.WriteLine(persona2.Nombre + " " + persona2.Edad + " " + persona2.Sexo);
 
             persona1.comprobarSexo(n);
 
