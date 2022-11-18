@@ -4,23 +4,27 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ej_10_sep8
+namespace Ejercicio10
 {
     public class Metodos
     {
         public static Random rnd = new Random();
-        public static int rndNumero(int minimo, int maximo)
+
+        public static int randomNum(int minimo, int maximo)
         {
-            int numero = rnd.Next(minimo, maximo);
-            return numero;
+            int num = rnd.Next(minimo, maximo);
+            return num;
         }
     }
+
     public class Carta
     {
-        public int numero;
-        string palo;
-        public static string[] Palos = { "Espadas", "Oros", "Copas", "Bastos" };
-        public static int limitePalos = 12;
+
+        private int numero;
+        private string palo;
+
+        public static int maxnum = 12;
+        public static string[] palosDisponibles = { "Oros", "Bastos", "Copas", "Espadas" };
 
         public Carta(int numero, string palo)
         {
@@ -31,34 +35,37 @@ namespace ej_10_sep8
 
     public class Baraja
     {
-        Carta[] carta;
-        public int siguienteCarta;
+
+        private Carta[] carta;
+        private int siguienteeCarta;
+
         public static int cantCartas = 40;
 
         public Baraja()
         {
-            this.carta = new Carta[numCartas];
-            this.siguienteCarta = 0;
+            this.carta = new Carta[cantCartas];
+            this.siguienteeCarta = 0;
             crearBaraja();
             barajar();
         }
 
-        public void crearBaraja()
+        private void crearBaraja()
         {
-            string[] palos = Carta.Palos;
-            for (int i=0; i < palos.Length; i++)
+            string[] palos = Carta.palosDisponibles;
+
+            for (int i = 0; i < palos.Length; i++)
             {
-                for (int j = 0; j < Carta.limitePalos; j++)
+                for (int j = 0; j < Carta.maxnum; j++)
                 {
                     if (!(j == 7 || j == 8))
                     {
                         if (j >= 9)
                         {
-                            carta[((i * (Carta.limitePalos - 2)) + (j - 2))] = new Carta(j + 1, palos[i]);
+                            carta[((i * (Carta.maxnum - 2)) + (j - 2))] = new Carta(j + 1, palos[i]);
                         }
                         else
                         {
-                            carta[((i * (Carta.limitePalos - 2)) + (j))] = new Carta(j + 1, palos[i]);
+                            carta[((i * (Carta.maxnum - 2)) + (j))] = new Carta(j + 1, palos[i]);
                         }
                     }
                 }
@@ -67,43 +74,45 @@ namespace ej_10_sep8
 
         public void barajar()
         {
-            int aleatorio = 0;
-            Carta b;
+            int posAleatoria = 0;
+            Carta c;
 
             for (int i = 0; i < carta.Length; i++)
             {
-                aleatorio = Metodos.rndNumero(0, numCartas - 1);
-                b = carta[i];
-                carta[i] = carta[aleatorio];
-                carta[aleatorio] = b;
+                posAleatoria = Metodos.randomNum(0, cantCartas - 1);
+                c = carta[i];
+                carta[i] = carta[posAleatoria];
+                carta[posAleatoria] = c;
             }
-            this.siguienteCarta = 0;
+            this.siguienteeCarta = 0;
         }
 
         public Carta siguienteCarta()
         {
-            Carta d = null;
+            Carta c = null;
 
-            if (siguienteCarta == cantCartas)
+            if (siguienteeCarta == cantCartas)
             {
-                Console.WriteLine("No hay más cartas, por favor, barajee de nuevo");
+                Console.WriteLine("Ya no hay mas cartas, barajea de nuevo");
             }
             else
             {
-                d = carta[siguienteCarta++];
+                c = carta[siguienteeCarta++];
             }
-            return d;
+
+            return c;
         }
 
         public Carta[] darCartas(int numCartas)
         {
+
             if (numCartas > cantCartas)
             {
-                Console.WriteLine("No se pueden dar más cartas.");
+                Console.WriteLine("No se pueden dar mas cartas");
             }
-            if (cartasDisponibles() < numCartas)
+            else if (cartasDisponible() < numCartas)
             {
-                Console.WriteLine("No hay suficientes cartas.");
+                Console.WriteLine("No hay suficientes cartas");
             }
             else
             {
@@ -117,25 +126,40 @@ namespace ej_10_sep8
             return null;
         }
 
-        public int cartasDisponibles()
+        public int cartasDisponible()
         {
-            return cantCartas - siguienteCarta;
+            return cantCartas - siguienteeCarta;
         }
 
         public void cartasMonton()
         {
-            if (cartasDisponibles() == cantCartas)
+            if (cartasDisponible() == cantCartas)
             {
-                Console.WriteLine("No se ha sacado ninguna carta.");
+                Console.WriteLine("No se ha sacado ninguna carta");
             }
             else
             {
-                int cantCartitas = 0;
-                for (int i = 0; i < siguienteCarta; i++)
+                int cantCartass = 0;
+                for (int i = 0; i < siguienteeCarta; i++)
                 {
-                    cantCartitas++;
+                    cantCartass++;
                 }
-                Console.WriteLine(cantCartitas);
+                Console.WriteLine(cantCartass);
+            }
+        }
+
+        public void mostrarBaraja()
+        {
+            if (cartasDisponible() == 0)
+            {
+                Console.WriteLine("No hay cartas que mostrar");
+            }
+            else
+            {
+                for (int i = siguienteeCarta; i < carta.Length; i++)
+                {
+                    Console.WriteLine(carta[i]);
+                }
             }
         }
     }
@@ -143,6 +167,30 @@ namespace ej_10_sep8
     {
         static void Main(string[] args)
         {
+            Baraja b = new Baraja();
+
+            Console.WriteLine("Cartas disponibles: " + b.cartasDisponible());
+            b.siguienteCarta();
+            b.darCartas(14);
+            Console.WriteLine("Cartas disponibles: " + b.cartasDisponible());
+            Console.WriteLine("Cartas sacadas por ahora: ");
+            b.cartasMonton();
+
+            b.barajar();
+
+            Carta[] c = b.darCartas(19);
+            Console.WriteLine("Cartas sacadas despues de barajar: ");
+
+            int cantCartass = 0;
+
+            for (int i = 0; i < c.Length; i++)
+            {
+                cantCartass++;
+            }
+
+            Console.WriteLine(cantCartass);
+
+            Console.ReadKey();
         }
     }
 }
