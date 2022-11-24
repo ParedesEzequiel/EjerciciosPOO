@@ -166,7 +166,7 @@ namespace ej_08_sep8
 
         private void creaAlumnos()
         {
-            for (int i = 0; i < alumnos.Length; i++)
+            for (int i = 0; i < alumnos.GetLength(0); i++)
             {
                 alumnos[i] = new Alumno();
             }
@@ -175,7 +175,7 @@ namespace ej_08_sep8
         private bool asistenciaAlumnos()
         {
             int cuentaAsistencia = 0;
-            for (int i = 0; i < alumnos.Length; i++)
+            for (int i = 0; i < alumnos.GetLength(0); i++)
             {
                 if (alumnos[i].isAsistencia())
                 {
@@ -183,7 +183,7 @@ namespace ej_08_sep8
                 }
             }
             Console.WriteLine("Hay " + cuentaAsistencia + " alumnos.");
-            return cuentaAsistencia >= ((int)(alumnos.Length / 2));
+            return cuentaAsistencia >= ((int)(alumnos.GetLength(0) / 2));
         }
 
         public bool darClase()
@@ -212,7 +212,7 @@ namespace ej_08_sep8
             int chicosApro = 0;
             int chicasApro = 0;
 
-            for (int i = 0; i < alumnos.Length; i++)
+            for (int i = 0; i < alumnos.GetLength(0); i++)
             {
                 if (alumnos[i].getNota() >= 5)
                 {
